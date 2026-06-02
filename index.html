@@ -604,7 +604,8 @@ footer{padding:1.5rem 2.5rem 1.5rem 4rem;display:flex;justify-content:space-betw
   .detail-ed{padding:1.5rem 1.25rem;}
   .detail-ed-meta{flex-direction:column;gap:0;}
   .dem-item{border-right:none;border-bottom:0.5px solid rgba(19,18,16,0.09);padding:0.7rem 0;}
-  .dem-item:last-child{border-bottom:none;}
+  .dem-item:last-child{border-bottom:none;padding-left:0;}
+  .dem-item:first-child{padding-left:0;}
 
   .intern-header-left{padding:2rem 1.25rem;}
   .intern-big-title{font-size:clamp(2.2rem,10vw,3rem);}
@@ -1230,6 +1231,20 @@ footer{padding:1.5rem 2.5rem 1.5rem 4rem;display:flex;justify-content:space-betw
 .intern-basic-info{display:flex;align-items:center;gap:0.5rem;margin-bottom:1rem;flex-wrap:wrap;}
 .ibi-item{font-family:var(--mono);font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:var(--ink-mid);}
 .ibi-sep{color:var(--rule);font-size:12px;}
+
+/* ── ADDITIONAL MOBILE FIXES ── */
+@media(max-width:900px){
+  .dem-item:last-child{padding-left:0;}
+  .intern-award-row{padding:1rem 1.5rem;gap:1.2rem;}
+}
+@media(max-width:600px){
+  .intern-award-row{padding:0.8rem 1.25rem;flex-wrap:wrap;gap:0.6rem;}
+  .intern-award-label{width:30px;}
+  .intern-award-item{font-size:11px;padding:3px 7px;}
+  .hero-tools-list{margin-top:0.5rem;}
+  .htl-row{padding:0.45rem 0.7rem;}
+  .htl-val{font-size:11.5px;}
+}
 </style>
 </head>
 <body>
@@ -1391,9 +1406,9 @@ footer{padding:1.5rem 2.5rem 1.5rem 4rem;display:flex;justify-content:space-betw
             <div><div class="c-num">No.03</div></div>
             <div class="c-illo"><svg viewBox="0 0 80 40" width="80" height="40" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="4,30 16,12 28,22 40,8 52,20 64,6 76,14"/><circle cx="4" cy="30" r="2.5" fill="currentColor" stroke="none"/><circle cx="76" cy="14" r="2.5" fill="currentColor" stroke="none"/></svg></div>
             <h2 class="c-headline">Side<br><em>Builds</em></h2>
-            <p class="c-body">想到就做，做完就用。不追求完整，只解决当下的痛点。6 个即兴工具。</p>
+            <p class="c-body">想到就做，做完就用。不追求完整，只解决当下的痛点。7 个即兴工具。</p>
             <div class="c-footer">
-              <div class="c-tags"><span class="c-tag">Python · JS · HTML</span><span class="c-tag">6 个即兴工具</span></div>
+              <div class="c-tags"><span class="c-tag">Python · JS · HTML</span><span class="c-tag">7 个即兴工具</span></div>
               <div class="c-btn"><svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
             </div>
           </div>
@@ -1761,7 +1776,7 @@ function getTop(){return[...document.querySelectorAll('#stack .card')].find(c=>c
 const vibeHTML=`
 <div class="vc-wall">
   <div class="vc-wall-header">
-    <span class="vc-wall-label">6 个即兴工具</span>
+    <span class="vc-wall-label">7 个即兴工具</span>
     <span class="vc-wall-sub">想到就做，做完就用</span>
   </div>
   <div class="vc-grid">
